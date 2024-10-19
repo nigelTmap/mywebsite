@@ -1,0 +1,130 @@
+ .wrapper{
+    display: flex;
+    
+ }
+ .sec-texts {
+    animation:slide 6s steps(1) infinite, colorful 6s infinite;
+    list-style: none;
+    top: 0;
+    position: relative;
+    
+}  
+
+@keyframes slide {
+    100% {
+        top: -150px;
+    }
+}
+
+@keyframes colorful {
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+.sec-texts span{
+    position: relative;
+
+}
+
+.sec-texts{
+    
+    font-size:50px;
+    overflow:hidden;
+}
+
+.sec-texts  span::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 400px;
+    color: darkblue;
+    height: 70px;
+    border-left: 2px solid #fff;
+    background: white;
+    animation: typing 1.5s steps(10) infinite alternate;
+}
+
+@keyframes typing {
+    100% {
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}
+
+footer{
+    background-color:   darkblue; 
+}
+
+.card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px ;
+    transition: transform 0.5s ease;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0,0, 0.1);
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.2s ease;
+    transform-style: preserve-3d;
+    overflow: hidden;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.card-text {
+    font-size: 14px;
+    color: #666;
+}
+.card:hover img{
+    transform: rotate(45deg);
+}
+.card:not(:hover) img{
+    transform: rotate(0deg);
+}
+.container{
+    padding-bottom: 30px;
+}
+.card:hover {
+    background-color:   darkblue  ;
+
+}
+
+.card-link{
+    background-color:darkblue;
+    color:#fff;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.card-link:active{
+    background-color: rgb(1, 4, 5);
+}
+.card-link:hover{
+    background-color: floralwhite;
+    color: darkblue;
+}
+body{
+    background-image: url('images/pic.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
