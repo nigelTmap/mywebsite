@@ -43,8 +43,9 @@ https://templatemo.com/tm-578-first-portfolio
 }
 
 body {
-  background: var(--white-color); 
-    font-family: var(--body-font-family); 
+    /* background: var(--white-color); */
+    background: var(--primary-color);
+    font-family: var(--body-font-family);
 }
 
 
