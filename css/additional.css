@@ -133,6 +133,23 @@ body{
     color: #fff;
 }
 
+.list{
+    list-style: none;
+}
+
+.listicon{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    margin: 4px;
+}
+
+.copyright{
+    color: #fff;
+}
+
 
 
 
