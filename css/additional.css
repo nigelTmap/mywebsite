@@ -53,6 +53,8 @@
 
 footer{
     background-color:   darkblue; 
+    height: auto;
+    min-height: 10vh;
 }
 
 .card img {
@@ -88,7 +90,7 @@ footer{
 }
 .card-text {
     font-size: 14px;
-    color: #666;
+    color: black;
 }
 .card:hover img{
     transform: rotate(45deg);
@@ -97,7 +99,7 @@ footer{
     transform: rotate(0deg);
 }
 .container{
-    padding-bottom: 30px;
+   padding-bottom: 30px;
 }
 .card:hover {
     background-color:   darkblue  ;
